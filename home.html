@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SG News- National</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for the sidebar */
+        #sidebar {
+            min-width: 250px;
+            max-width: 250px;
+            min-height: 100vh;
+            background: #437566;
+            color: white;
+        }
+        #sidebar .nav-link {
+            color: #adb5bd;
+        }
+        #sidebar .nav-link:hover {
+            color: white;
+            background-color: rgb(111, 0, 0);
+        }
+        #content {
+            padding: 20px;
+            width: 100%;
+        }
+        .welcome-section {
+            
+            background-color: #c8b913;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .news-section {
+            padding: 20px;
+        }
+        .news-card {
+            transition: transform 0.3s;
+        }
+        .news-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #437566;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div id="sidebar" class="d-flex flex-column p-3">
+            <h3 class="text-white"> SG News</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a href="index.php" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">National</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inter.html" class="nav-link">International</a>
+                </li>
+                <li class="nav-item">
+                    <a href="spo.html" class="nav-link">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bussi.html" class="nav-link">Business</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Edu.html" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tech.html" class="nav-link">Technology</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div id="content">
+            <!-- Toggle Sidebar Button -->
+            <button class="btn btn-primary d-md-none mb-3" id="toggleSidebar">Toggle Sidebar</button>
+
+            <!-- Welcome Section -->
+            <div class="welcome-section">
+                <h1>National News</h1>
+                <p>Explore todays content and stay updated with the latest news!</p>
+            </div>
+
+            <!-- Carousel Section -->
+            <div id="carouselExampleIndicators" class="carousel slide my-6" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imgc/nac.png" class="d-block w-100" alt="Slide 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>National News</h5>
+                            <p>Explore the latest News of the country.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/inc.png" class="d-block w-100" alt="Slide 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>International News</h5>
+                            <p>Stay updated with the latest news!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/tecc.png" class="d-block w-100" alt="Slide 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Technology</h5>
+                            <p>Explore the latest news of tech-features.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/edc.png" class="d-block w-100" alt="Slide 4">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Education</h5>
+                            <p>Explore the latest news of Universites.</p> 
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/spc.png" class="d-block w-100" alt="Slide 5">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Sports</h5>
+                            <p>Explore the latest Sports updates.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/buc.png" class="d-block w-100" alt="Slide 6">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Bussiness</h5>
+                            <p>Explore the latest Bussiness offer.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- News Section -->
+            <div class="news-section">
+                <h2>Latest News</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="imgd/dryu.webp" class="card-img-top" alt="News 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Dr Yunus orders probe into lawyer killing in Chattogram</h5>
+                                <p class="card-text">Chief adviser Dr Muhammad Yunus has directed the authorities concerned to conduct an investigation into the killing of a lawyer in Chattogram port city and take appropriate legal measures to this end.
+
+                                    Condemning the murder of the lawyer, he urged people to keep calm and stay away from participating in any untoward activities.</p>
+                                <a href="https://en.prothomalo.com/bangladesh/9w5tkpfv9v" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="imgd/bnp.webp" class="card-img-top" alt="News 2">
+                            <div class="card-body">
+                                <h5 class="card-title">BNP submits 62 proposals to reform constitution</h5>
+                                <p class="card-text">Bangladesh Nationalist Party (BNP) has made 62 proposals, including inclusion of the election-time caretaker government in the constitution, bicameral parliament, bringing a balance of power between the prime minister and the president and creation of vice president and deputy prime minister posts.
+
+                                    The party submitted the written proposal to the constitution reform commission at the national parliament building on Tuesday morning.
+                                    
+                                    Later, BNP standing committee member Salahuddin Ahmed disclosed this to the newspersons.
+                                </p>
+                                <a href="https://en.prothomalo.com/bangladesh/politics/7crxu4ntp7" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="imgd/hommin.webp" class="card-img-top" alt="News 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Students have to be convinced not to take to streets: Home adviser</h5>
+                                <p class="card-text">Home advisor lieutenant general (retd) Jahangir Alam Chowdhury said the government wants to hold dialogue with students to resolve any crisis.</p>
+                                <a href="https://en.prothomalo.com/bangladesh/local-news/sozpwakpvi" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-section">
+                <h2>Other News</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-19%2Ff9hf03y1%2Fprothomalo-bangla2024-11-194ewxuk9lJU.jpeg?auto=format%2Ccompress&fmt=webp&format=webp&w=300&dpr=1.3" class="card-img-top" alt="News 1">
+                            <div class="card-body">
+                                <h5 class="card-title">JU student dies in battery run rickshaw accident on campus</h5>
+                                <p class="card-text">The deceased, Afsana Rachi, was a student of the 53rd batch of the Marketing Department at the university.</p>
+                                <a href="https://en.prothomalo.com/bangladesh/accident/cdqgoni80b" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://images.prothomalo.com/prothomalo-english%2F2023-10%2Fbd7ca362-4961-4661-9aee-020ef60cbdeb%2Fprothomalo_bangla_2023_10_35fa74da_2f3a_4696_9b7f_2f555c3e6fda_BGB.webp?rect=1%2C0%2C999%2C666&auto=format%2Ccompress&fmt=webp&format=webp&w=300&dpr=1.3" class="card-img-top" alt="News 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Student-clash 6 platoons of BGB deployed in Jatrabari-Demra area</h5>
+                                <p class="card-text">Six platoons of Border Guard Bangladesh (BGB) personnel have been deployed in Jatrabari-Demra area to maintain law and order</p>
+                                <a href="https://en.prothomalo.com/bangladesh/city/cyhkrwb3cz" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-23%2Fscjodnlc%2Fprothomalo-bangla2024-11-23gxfvnohsSreepur-Electric-1.webp?auto=format%2Ccompress&fmt=webp&format=webp&w=300&dpr=1.3" class="card-img-top" alt="News 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Picnic bus touches live wire: 4 officers, 3 linemen of REB suspended</h5>
+                                <p class="card-text">Four officers and three linemen of REB have been suspended in connection to the incident of three university students being electrocuted in Sreepur area of</p>
+                                <a href="https://en.prothomalo.com/bangladesh/local-news/xfehnrj83p" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-19%2Fq956dunn%2FAsif-Nazrul.webp?rect=0%2C0%2C800%2C533&auto=format%2Ccompress&fmt=webp&format=webp&w=300&dpr=1.3" class="card-img-top" alt="News 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Election to be given soon after carrying out some urgent reforms: Law adviser</h5>
+                                <p class="card-text">Asif Nazrul also remarked that those who are involved with the interim government want to go back to their own professions as soon as possible</p>
+                                <a href="https://en.prothomalo.com/bangladesh/government/lnxc4k2csa" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-22%2F2iilf132%2FPlaintiff-Kulsum-Akter.webp?rect=0%2C0%2C800%2C533&auto=format%2Ccompress&fmt=webp&format=webp&w=300&dpr=1.3" class="card-img-top" alt="News 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Murder case Plaintiff says she was lured with promises of a job</h5>
+                                <p class="card-text">The lawsuit that was filed showing a living husband to be dead in Ashulia was lodged as the plaintiff was lured with a job and</p>
+                                <a href="https://en.prothomalo.com/bangladesh/crime-and-law/y9pgh4a6un" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://images.prothomalo.com/prothomalo-english%2F2023-05%2F7c5343a6-9fdd-4704-8648-7d3fe6be5368%2Fprothomalo_bangla_2023_04_53d6aa2e_f9e8_4517_a965_9efa3eda3ec9_1.webp?rect=4%2C0%2C633%2C422&auto=format%2Ccompress&fmt=webp&format=webp&w=300&dpr=1.3" class="card-img-top" alt="News 3">
+                            <div class="card-body">
+                                <h5 class="card-title">10 die from dengue, 886 hospitalised in last 24 hrs</h5>
+                                <p class="card-text">Ten dengue patients died while 886 were admitted to different hospitals in the country during the past 24 hours till this morning</p>
+                                <a href="https://en.prothomalo.com/bangladesh/accident/c6xgehbaav" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="mt-4">
+                <p>&copy; 2024 SG NEWS and Muhammad Sagor. All rights reserved. Developed &hearts; by Muhammad Sagor</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // JavaScript to toggle sidebar on small screens
+        const sidebar = document.getElementById('sidebar');
+        const toggleSidebar = document.getElementById('toggleSidebar');
+
+        toggleSidebar.addEventListener('click', () => {
+            sidebar.classList.toggle('d-none');
+        });
+    </script>
+</body>
+</html>

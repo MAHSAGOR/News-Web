@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SG News- International</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for the sidebar */
+        #sidebar {
+            min-width: 250px;
+            max-width: 250px;
+            min-height: 100vh;
+            background: #437566;
+            color: white;
+        }
+        #sidebar .nav-link {
+            color: #adb5bd;
+        }
+        #sidebar .nav-link:hover {
+            color: white;
+            background-color: rgb(111, 0, 0);
+        }
+        #content {
+            padding: 20px;
+            width: 100%;
+        }
+        .welcome-section {
+            
+            background-color: #c8b913;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .news-section {
+            padding: 20px;
+        }
+        .news-card {
+            transition: transform 0.3s;
+        }
+        .news-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #437566;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div id="sidebar" class="d-flex flex-column p-3">
+            <h3 class="text-white"> SG News</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a href="index.php" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">National</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inter.html" class="nav-link">International</a>
+                </li>
+                <li class="nav-item">
+                    <a href="spo.html" class="nav-link">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bussi.html" class="nav-link">Business</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Edu.html" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tech.html" class="nav-link">Technology</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div id="content">
+            <!-- Toggle Sidebar Button -->
+            <button class="btn btn-primary d-md-none mb-3" id="toggleSidebar">Toggle Sidebar</button>
+
+            <!-- Welcome Section -->
+            <div class="welcome-section">
+                <h1>International News</h1>
+                <p>Explore todays content and stay updated with the latest news!</p>
+            </div>
+
+            <!-- Carousel Section -->
+            <div id="carouselExampleIndicators" class="carousel slide my-6" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imgc/nac.png" class="d-block w-100" alt="Slide 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>National News</h5>
+                            <p>Explore the latest News around the globe.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/inc.png" class="d-block w-100" alt="Slide 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>International News</h5>
+                            <p>Stay updated with the latest news!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/tecc.png" class="d-block w-100" alt="Slide 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Technology</h5>
+                            <p>Explore the latest news of tech-features.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/edc.png" class="d-block w-100" alt="Slide 4">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Education</h5>
+                            <p>Explore the latest news of Universites.</p> 
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/spc.png" class="d-block w-100" alt="Slide 5">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Sports</h5>
+                            <p>Explore the latest Sports updates.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/buc.png" class="d-block w-100" alt="Slide 6">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Bussiness</h5>
+                            <p>Explore the latest Bussiness offer.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- News Section -->
+            <div class="news-section">
+                <h2>Latest News</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="imgd/warrenbuf.webp" class="card-img-top" alt="News 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Warren Buffett’s letter on $1.1b donation, $150b wealth distribution</h5>
+                                <p class="card-text">Iconic investor and Berkshire Hathaway CEO, 94, donated more than $1.1 billion of Berkshire Hathaway stock on Monday.
+
+                                    In a letter to the shareholders, he also offered a plan to donate 99.5 per cent of his remaining wealth, now valued at more than $150 billion by Forbes magazine, to a charitable trust overseen by his daughter and two sons when he dies. The children are Susan Buffet, 71, Howard Buffet, 69, and Peter Buffet, 66.</p>
+                                <a href="https://en.prothomalo.com/international/americas/tj3pd9crxz" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="imgd/trump.webp" class="card-img-top" alt="News 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Trump vows big tariffs on Mexico, Canada and China</h5>
+                                <p class="card-text">US President-elect Donald Trump said Monday he intends to impose sweeping tariffs on goods from Mexico, Canada and China in response to illegal drug trade and immigration.
+
+                                    In a series of posts to his Truth Social account, Trump vowed to hit some of the United States’ largest trading partners with duties on all goods entering the country.
+                                    
+                                    “On January 20th, as one of my many first Executive Orders, I will sign all necessary documents to charge Mexico and Canada a 25 per cent tariff on ALL products coming into the United States, and its ridiculous Open Borders,” he wrote.</p>
+                                <a href="https://en.prothomalo.com/international/americas/tqurec1iqd" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="imgd/is.webp" class="card-img-top" alt="News 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Israel pounds Beirut suburbs as Lebanon says 31 dead nationwide</h5>
+                                <p class="card-text">Israeli strikes pummelled south Beirut on Monday, Lebanese official media said, and health authorities reported 31 people killed across the war-hit country, most of them in the south.
+
+                                    Israel’s military said in a statement Monday afternoon it had hit “approximately 25 terror targets” belonging to Hezbollah across Lebanon, including in Nabatiyeh, Baalbek, the Bekaa Valley and southern Beirut and the city’s outskirts.</p>
+                                <a href="https://en.prothomalo.com/international/middle-east/bo9urw6ls9" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-section">
+                <h2>Other News</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-26%2Flpgarg0d%2F94d7faeb69979eb761b8f2102ff87c86.jpg?auto=format%2Ccompress&fmt=webp&format=webp&w=300&dpr=1.3" class="card-img-top" alt="News 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Four Pakistan security forces killed as ex-PM Khan supporters flood capital</h5>
+                                <p class="card-text">Pakistani protesters demanding the release of ex-prime minister Imran Khan on Tuesday killed four members of the nation’s security forces, the government said, as the</p>
+                                <a href="https://en.prothomalo.com/international/south-asia/yupdd849oa" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://images.prothomalo.com/prothomalo-english%2F2024-06%2F6e05b48e-2121-41d1-9f45-977c3c56e70e%2F335965_01_02__1_.jpg?rect=0%2C0%2C2956%2C1971&auto=format%2Ccompress&fmt=webp&format=webp&w=300&dpr=1.3" class="card-img-top" alt="News 2">
+                            <div class="card-body">
+                                <h5 class="card-title">China’s Xi calls for troops to boost war preparedness</h5>
+                                <p class="card-text">Xi said the military should “comprehensively strengthen training and preparation for war, (and) ensure troops have solid combat capabilities”, CCTV reported
+                                </p>
+                                <a href="https://en.prothomalo.com/international/china/2679d0at05" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://images.prothomalo.com/prothomalo-english%2F2024-10-14%2F3d44dgs7%2FModi-Trudeau.jpg?rect=0%2C0%2C1338%2C892&auto=format%2Ccompress&fmt=webp&format=webp&w=300&dpr=1.3" class="card-img-top" alt="News 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Canada denies it has evidence linking India PM Modi to violence</h5>
+                                <p class="card-text">Ottawa says it has evidence linking Indian govt agents to the 2023 murder of Sikh separatist Hardeep Singh Nijjar in Canada.</p>
+                                <a href="https://en.prothomalo.com/international/india/xjft2i0mds" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://images.prothomalo.com/prothomalo-english%2F2021-09%2F8ef0b38f-d7f5-4c53-bb77-02a52132d751%2FRUSSIA_PUTIN.JPG?rect=316%2C0%2C3228%2C2152&auto=format%2Ccompress&fmt=webp&format=webp&w=300&dpr=1.3" class="card-img-top" alt="News 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Putin hints at strikes on West in 'global' Ukraine war</h5>
+                                <p class="card-text">The Kremlin strongman spoke out after a day of frayed nerves, with Russia test-firing a new generation intermediate-range missile at Ukraine</p>
+                                <a href="https://en.prothomalo.com/international/europe/uxnzlxob0t" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://images.prothomalo.com/prothomalo-english%2F2024-06%2F3caf2d3a-2521-41e5-bb34-28ae8a5f6aca%2F267383_01_02.jpg?auto=format%2Ccompress&fmt=webp&format=webp&w=300&dpr=1.3" class="card-img-top" alt="News 2">
+                            <div class="card-body">
+                                <h5 class="card-title">South Africa's Ramaphosa re-elected after coalition deal</h5>
+                                <p class="card-text">Last month's election marked a historic turning point for South Africa, ending three decades of dominance by the ANC of the late Nelson Mandela
+                                    </p>
+                                <a href="https://en.prothomalo.com/international/africa/7pwwwk0zed" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-21%2Ft9bzdf5o%2F279539-01-02.jpg?rect=250%2C0%2C1350%2C900&auto=format%2Ccompress&fmt=webp&format=webp&w=300&dpr=1.3" class="card-img-top" alt="News 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Russia fired intercontinental ballistic missile at Ukraine for first time: Kyiv</h5>
+                                <p class="card-text">Moscow on Thursday launched an intercontinental ballistic missile at Ukraine for the first time, Kyiv said</p>
+                                <a href="https://en.prothomalo.com/international/europe/d7j4l0zhfi" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="mt-4">
+                <p>&copy; 2024 SG NEWS and Muhammad Sagor. All rights reserved. Developed &hearts; by Muhammad Sagor</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // JavaScript to toggle sidebar on small screens
+        const sidebar = document.getElementById('sidebar');
+        const toggleSidebar = document.getElementById('toggleSidebar');
+
+        toggleSidebar.addEventListener('click', () => {
+            sidebar.classList.toggle('d-none');
+        });
+    </script>
+</body>
+</html>

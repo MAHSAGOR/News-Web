@@ -1,0 +1,28 @@
+For CRUD operation Table Creation with values:
+
+CREATE TABLE clients (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR (100) NOT NULL,
+    email VARCHAR (200) NOT NULL UNIQUE,
+    phone VARCHAR(20) NULL,
+    address VARCHAR(200) NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+
+INSERT INTO clients (name, email, phone, address)
+VALUES
+('Rakib Hussain', 'rakib@gmail.com', '01229325204', 'Sylhet, Bangladesh'),
+('Moktar Ali', 'moktar@gmail.com', '01229325639', 'Dhaka, Bangladesh'),
+('sunny ahmed', 'sunny@gmail.com', '0178388623', 'Sylhet, Bangladesh');
+
+
+
+For Login-registration Table creation:
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);

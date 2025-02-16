@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SG News-Bussiness</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for the sidebar */
+        #sidebar {
+            min-width: 250px;
+            max-width: 250px;
+            min-height: 100vh;
+            background: #437566;
+            color: white;
+        }
+        #sidebar .nav-link {
+            color: #adb5bd;
+        }
+        #sidebar .nav-link:hover {
+            color: white;
+            background-color: rgb(111, 0, 0);
+        }
+        #content {
+            padding: 20px;
+            width: 100%;
+        }
+        .welcome-section {
+            
+            background-color: #c8b913;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .news-section {
+            padding: 20px;
+        }
+        .news-card {
+            transition: transform 0.3s;
+        }
+        .news-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #437566;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div id="sidebar" class="d-flex flex-column p-3">
+            <h3 class="text-white"> SG News</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a href="index.php" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">National</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inter.html" class="nav-link">International</a>
+                </li>
+                <li class="nav-item">
+                    <a href="spo.html" class="nav-link">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bussi.html" class="nav-link">Business</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Edu.html" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tech.html" class="nav-link">Technology</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div id="content">
+            <!-- Toggle Sidebar Button -->
+            <button class="btn btn-primary d-md-none mb-3" id="toggleSidebar">Toggle Sidebar</button>
+
+            <!-- Welcome Section -->
+            <div class="welcome-section">
+                <h1>Bussiness News</h1>
+                <p>Explore todays content and stay updated with the latest news!</p>
+            </div>
+
+            <!-- Carousel Section -->
+            <div id="carouselExampleIndicators" class="carousel slide my-6" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imgc/nac.png" class="d-block w-100" alt="Slide 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>National News</h5>
+                            <p>Explore the latest News of the country.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/inc.png" class="d-block w-100" alt="Slide 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>International News</h5>
+                            <p>Stay updated with the latest news!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/tecc.png" class="d-block w-100" alt="Slide 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Technology</h5>
+                            <p>Explore the latest news of tech-features.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/edc.png" class="d-block w-100" alt="Slide 4">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Education</h5>
+                            <p>Explore the latest news of Universites.</p> 
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/spc.png" class="d-block w-100" alt="Slide 5">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Sports</h5>
+                            <p>Explore the latest Sports updates.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/buc.png" class="d-block w-100" alt="Slide 6">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Bussiness</h5>
+                            <p>Explore the latest Bussiness offer.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- News Section -->
+            <div class="news-section">
+                <h2>Latest News</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="imgd/plan.webp" class="card-img-top" alt="News 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Stalemate in investments due to instability, chaos: Planning adviser</h5>
+                                <p class="card-text">The adviser for education and planning ministries, Wahiduddin Mahmud, has said there has been a type of stagnation in economic activities, while high inflation is disrupting lives.
+
+                                    Speaking to reporters after an Executive Committee of the National Economic Council (ECNEC) meeting on Monday, the adviser highlighted the challenges posed by high inflation, dwindling purchasing power, and reduced economic activity.
+                                    
+                                    </p>
+                                <a href="https://en.prothomalo.com/business/local/mw3xmew5wz" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="imgd/dhkstok.webp" class="card-img-top" alt="News 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Index marked downward trend last week as DSE lost 130.75 points</h5>
+                                <p class="card-text">Bangladesh is experiencing substantial economic and banking sector transformations, marked by significant developments across various industries</p>
+                                <a href="https://en.prothomalo.com/business/dabwei6kx0" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="imgd/bashir.webp" class="card-img-top" alt="News 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Efforts on to build a dignified society: Bashir Uddin</h5>
+                                <p class="card-text">The adviser noted that the prices of sugar, oil, and onion have declined in the market thanks to the wholehearted efforts of everyone.</p>
+                                <a href="https://en.prothomalo.com/business/local/3vstrl0i6n" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-section">
+                <h2>Other News</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://images.prothomalo.com/prothomalo-english%2F2024-09-11%2Fb0sd9tkf%2F6-2023-07-19T041752Z_995463236_RC2262AKQCVS_RTRMADP_3_BANGLADESH-ECONOMY.JPG?rect=333%2C0%2C3266%2C2177&auto=format%2Ccompress&fmt=webp&format=webp&w=300&dpr=1.3" class="card-img-top" alt="News 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Moody’s rating not appropriate: Bangladesh Bank</h5>
+                                <p class="card-text">In a statement, the Bangladesh central bank mentioned that the change of sovereign ratings by Moody's is tantamount to "looking through the rearview mirror" while</p>
+                                <a href="https://en.prothomalo.com/business/local/2q07rj3os9" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://images.prothomalo.com/prothomalo-english%2F2024-09-03%2Fzxdcg2gw%2Frmg.webp?rect=1%2C0%2C639%2C426&auto=format%2Ccompress&fmt=webp&format=webp&w=300&dpr=1.3" class="card-img-top" alt="News 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Currently, the minimum wage of the workers is Tk 12,500 for the readymade garment, which has been in effect since 1 December 2024.</h5>
+                                <p class="card-text">Brief description of the news article.</p>
+                                <a href="https://en.prothomalo.com/business/local/xcoifxc9bd" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-20%2Fstfv4img%2Fprothomalo-bangla2024-10-021wjc1ngdUntitled-8.png?rect=0%2C0%2C955%2C637&auto=format%2Ccompress&fmt=webp&format=webp&w=300&dpr=1.3" class="card-img-top" alt="News 3">
+                            <div class="card-body">
+                                <h5 class="card-title">100 days of interim govt
+                                    Discomfort among businesspersons, uncertainty over investments</h5>
+                                <p class="card-text">Less investment means less employment and more unemployment. Economic downtrends also result in a drop in people’s income growth</p>
+                                <a href="https://en.prothomalo.com/business/local/cf22qs3ija" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/81ef/live/eaddf520-abc0-11ef-9342-29c72577c8d2.jpg.webp" class="card-img-top" alt="News 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Trump vows tariffs on Mexico, Canada and China on day one</h5>
+                                <p class="card-text">The president-elect calls it an effort to force them to crack down on illegal immigration and drug smuggling into the US.</p>
+                                <a href="https://www.bbc.com/news/articles/cvg7y52n411o" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/2b98/live/75aaa5f0-ab61-11ef-be9b-2b500d428f7d.jpg.webp" class="card-img-top" alt="News 2">
+                            <div class="card-body">
+                                <h5 class="card-title">General Motors agrees deal to enter F1 in 2026</h5>
+                                <p class="card-text">US car giant General Motors reaches an agreement in principle to enter Formula 1 in 2026 with its Cadillac brand.</p>
+                                <a href="https://www.bbc.com/sport/formula1/articles/cy8nzlwpn83o" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/976a/live/c40c23e0-abf2-11ef-a04a-6f5efadaaae2.jpg.webp" class="card-img-top" alt="News 3">
+                            <div class="card-body">
+                                <h5 class="card-title">LinkedIn: We're too boring for kids for social media ban</h5>
+                                <p class="card-text">It is one of a number of tech firms pushing back against Australia's plan to ban social media for under-16s.</p>
+                                <a href="https://www.bbc.com/news/articles/cx2dz2z72y8o" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="mt-4">
+                <p>&copy; 2024 SG NEWS and Muhammad Sagor. All rights reserved. Developed &hearts; by Muhammad Sagor</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // JavaScript to toggle sidebar on small screens
+        const sidebar = document.getElementById('sidebar');
+        const toggleSidebar = document.getElementById('toggleSidebar');
+
+        toggleSidebar.addEventListener('click', () => {
+            sidebar.classList.toggle('d-none');
+        });
+    </script>
+</body>
+</html>

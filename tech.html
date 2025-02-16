@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SG News-Technology</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for the sidebar */
+        #sidebar {
+            min-width: 250px;
+            max-width: 250px;
+            min-height: 100vh;
+            background: #437566;
+            color: white;
+        }
+        #sidebar .nav-link {
+            color: #adb5bd;
+        }
+        #sidebar .nav-link:hover {
+            color: white;
+            background-color: rgb(111, 0, 0);
+        }
+        #content {
+            padding: 20px;
+            width: 100%;
+        }
+        .welcome-section {
+            
+            background-color: #c8b913;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .news-section {
+            padding: 20px;
+        }
+        .news-card {
+            transition: transform 0.3s;
+        }
+        .news-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #437566;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div id="sidebar" class="d-flex flex-column p-3">
+            <h3 class="text-white"> SG News</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a href="index.php" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">National</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inter.html" class="nav-link">International</a>
+                </li>
+                <li class="nav-item">
+                    <a href="spo.html" class="nav-link">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bussi.html" class="nav-link">Business</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Edu.html" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tech.html" class="nav-link">Technology</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div id="content">
+            <!-- Toggle Sidebar Button -->
+            <button class="btn btn-primary d-md-none mb-3" id="toggleSidebar">Toggle Sidebar</button>
+
+            <!-- Welcome Section -->
+            <div class="welcome-section">
+                <h1>Technology & Innovation News</h1>
+                <p>Explore todays content and stay updated with the latest news!</p>
+            </div>
+
+            <!-- Carousel Section -->
+            <div id="carouselExampleIndicators" class="carousel slide my-6" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imgc/nac.png" class="d-block w-100" alt="Slide 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>National News</h5>
+                            <p>Explore the latest News of the country.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/inc.png" class="d-block w-100" alt="Slide 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>International News</h5>
+                            <p>Stay updated with the latest news!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/tecc.png" class="d-block w-100" alt="Slide 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Technology</h5>
+                            <p>Explore the latest news of tech-features.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/edc.png" class="d-block w-100" alt="Slide 4">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Education</h5>
+                            <p>Explore the latest news of Universites.</p> 
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/spc.png" class="d-block w-100" alt="Slide 5">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Sports</h5>
+                            <p>Explore the latest Sports updates.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/buc.png" class="d-block w-100" alt="Slide 6">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Bussiness</h5>
+                            <p>Explore the latest Bussiness offer.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- News Section -->
+            <div class="news-section">
+                <h2>Latest News</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/55c8/live/1e314640-a68d-11ef-a4f8-5301a13ec317.jpg.webp" class="card-img-top" alt="News 1">
+                            <div class="card-body">
+                                <h5 class="card-title">How fidget toys could help reduce youth self-harm</h5>
+                                <p class="card-text">Self-help toolkits which include sensory toys could be rolled out to primary school-age children.</p>
+                                <a href="https://www.bbc.com/news/articles/c3rx2l2xj3do" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/6b17/live/b3fca630-a028-11ef-8f35-c56393c36b2c.jpg.webp" class="card-img-top" alt="News 2">
+                            <div class="card-body">
+                                <h5 class="card-title">From eyesore to asset: How a smelly seaweed could fuel cars</h5>
+                                <p class="card-text">Scientists in the Caribbean are turning algae that have been choking beaches into biofuel.</p>
+                                <a href="https://www.bbc.com/news/articles/czr71vpz4ypo" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://ichef.bbci.co.uk/images/ic/480x270/p0k4wzjn.jpg.webp" class="card-img-top" alt="News 3">
+                            <div class="card-body">
+                                <h5 class="card-title">How robotaxis are trying to win passengers' trust</h5>
+                                <p class="card-text">Autonomous vehicles are already clocking up millions of miles on public roads, but they face an uphill battle to convince people to climb in to enjoy the ride.</p>
+                                <a href="https://www.bbc.com/future/article/20241115-how-robotaxis-are-trying-to-win-passengers-trust" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-section">
+                <h2>Other News</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://ichef.bbci.co.uk/news/480/cpsprodpb/60cf/live/cfe40590-a4e8-11ef-bdf5-b7cb2fa86e10.jpg.webp" class="card-img-top" alt="News 1">
+                            <div class="card-body">
+                                <h5 class="card-title">'I may not be human but I sing from my soul' - AI divides African musicians</h5>
+                                <p class="card-text">Some pioneers see it as opportunity but others fear the continent's creativity will be stripped for profit.</p>
+                                <a href="https://www.bbc.com/news/articles/cdenplz5j89o" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://ichef.bbci.co.uk/images/ic/480x270/p0k5lpw4.png.webp" class="card-img-top" alt="News 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Antarctica's mysterious upside-down icescape</h5>
+                                <p class="card-text">When scientists peered beneath one of Antarctica's floating ice shelves, they were surprised to find an inverted landscape of peaks, valleys and plateaus.</p>
+                                <a href="https://www.bbc.com/future/article/20241119-antarcticas-upside-down-ice-scape-we-had-no-idea-existed" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="https://ichef.bbci.co.uk/news/480/cpsprodpb/91b4/live/35adb1f0-a8fe-11ef-bdf5-b7cb2fa86e10.jpg.webp" class="card-img-top" alt="News 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Conservationists turn to AI in battle to save red squirrels</h5>
+                                <p class="card-text">The tech is being used to automatically control the creatures' access to feeders at sites across the UK.</p>
+                                <a href="https://www.bbc.com/news/articles/cd6vwy30pv8o" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="mt-4">
+                <p>&copy; 2024 SG NEWS and Muhammad Sagor. All rights reserved. Developed &hearts; by Muhammad Sagor</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // JavaScript to toggle sidebar on small screens
+        const sidebar = document.getElementById('sidebar');
+        const toggleSidebar = document.getElementById('toggleSidebar');
+
+        toggleSidebar.addEventListener('click', () => {
+            sidebar.classList.toggle('d-none');
+        });
+    </script>
+</body>
+</html>

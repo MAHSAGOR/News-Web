@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SG News-Education</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for the sidebar */
+        #sidebar {
+            min-width: 250px;
+            max-width: 250px;
+            min-height: 100vh;
+            background: #437566;
+            color: white;
+        }
+        #sidebar .nav-link {
+            color: #adb5bd;
+        }
+        #sidebar .nav-link:hover {
+            color: white;
+            background-color: rgb(111, 0, 0);
+        }
+        #content {
+            padding: 20px;
+            width: 100%;
+        }
+        .welcome-section {
+            
+            background-color: #c8b913;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .news-section {
+            padding: 20px;
+        }
+        .news-card {
+            transition: transform 0.3s;
+        }
+        .news-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #437566;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div id="sidebar" class="d-flex flex-column p-3">
+            <h3 class="text-white"> SG News</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a href="index.php" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">National</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inter.html" class="nav-link">International</a>
+                </li>
+                <li class="nav-item">
+                    <a href="spo.html" class="nav-link">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bussi.html" class="nav-link">Business</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Edu.html" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tech.html" class="nav-link">Technology</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div id="content">
+            <!-- Toggle Sidebar Button -->
+            <button class="btn btn-primary d-md-none mb-3" id="toggleSidebar">Toggle Sidebar</button>
+
+            <!-- Welcome Section -->
+            <div class="welcome-section">
+                <h1>Education News</h1>
+                <p>Explore todays content and stay updated with the latest news!</p>
+            </div>
+
+            <!-- Carousel Section -->
+            <div id="carouselExampleIndicators" class="carousel slide my-6" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imgc/nac.png" class="d-block w-100" alt="Slide 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>National News</h5>
+                            <p>Explore the latest News of the country.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/inc.png" class="d-block w-100" alt="Slide 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>International News</h5>
+                            <p>Stay updated with the latest news!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/tecc.png" class="d-block w-100" alt="Slide 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Technology</h5>
+                            <p>Explore the latest news of tech-features.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/edc.png" class="d-block w-100" alt="Slide 4">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Education</h5>
+                            <p>Explore the latest news of Universites.</p> 
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/spc.png" class="d-block w-100" alt="Slide 5">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Sports</h5>
+                            <p>Explore the latest Sports updates.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgc/buc.png" class="d-block w-100" alt="Slide 6">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Bussiness</h5>
+                            <p>Explore the latest Bussiness offer.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- News Section -->
+            <div class="news-section">
+                <h2>Latest News</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="imgd/climte.jpg" class="card-img-top" alt="News 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Impact of Climate Change on Water Resources Will Increase Price Tag to Decarbonize the Grid1</h5>
+                                <p class="card-text">BA new study warns that current plans to achieve zero emissions on the grid by 2050 vastly underestimate the required investments in generation and transmission infrastructure. The reason: these plans ...</p>
+                                <a href="https://www.sciencedaily.com/releases/2024/11/241125125033.htm" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="imgd/solarcell.jpg" class="card-img-top" alt="News 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Stability of Perovskite Solar Cells Doubled With Protective Coating</h5>
+                                <p class="card-text">Scientists have developed a new protective coating that significantly extends the life of perovskite solar cells, making them more practical for applications outside the ...</p>
+                                <a href="https://www.sciencedaily.com/releases/2024/11/241121140959.htm" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="imgd/qurantam,.jpg" class="card-img-top" alt="News 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Quantum-Inspired Design Boosts Efficiency of Heat-to-Electricity Conversion</h5>
+                                <p class="card-text">Researchers have found a new way to improve a key element of thermophotovoltaic systems, which convert heat into electricity via light. Engineers designed a thermal emitter that can deliver high efficiencies within practical design ...</p>
+                                <a href="https://www.sciencedaily.com/releases/2024/11/241121165356.htm" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-section">
+                <h2>Other News</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="imgd/supr.jpg" class="card-img-top" alt="News 1">
+                            <div class="card-body">
+                                <h5 class="card-title">A Nearby Supernova Could End the Search for Dark Matter</h5>
+                                <p class="card-text">Axions are the most likely candidate for enigmatic dark matter that dominates the universe. Astrophysicists are searching for evidence of high-mass axions produced during supernovae. Scientists propose that a quick way to find these axions is to ...</p>
+                                <a href="https://www.sciencedaily.com/releases/2024/11/241121141213.htm" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="imgd/redmos.jpg" class="card-img-top" alt="News 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Three Galactic 'Red Monsters' in the Early Universe</h5>
+                                <p class="card-text">Astronomers have identified three ultra-massive galaxies -- nearly as massive as the Milky Way -- already in place within the first billion years after the Big Bang. This surprising discovery was made possible by the James Webb Space Telescope's ...</p>
+                                <a href="https://www.sciencedaily.com/releases/2024/11/241113123127.htm" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="imgd/gravity.jpg" class="card-img-top" alt="News 3">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Research on Gravity in Line With Einstein's Theory of General Relativity</h5>
+                                <p class="card-text">Researchers used the Dark Energy Spectroscopic Instrument to map how nearly 6 million galaxies cluster across 11 billion years of cosmic history. Their observations line up with what Einstein's theory of general relativity .</p>
+                                <a href="https://www.sciencedaily.com/releases/2024/11/241120122655.htm" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="imgd/ithe.jpg" class="card-img-top" alt="News 1">
+                            <div class="card-body">
+                                <h5 class="card-title">The Future of Edge AI: Dye-Sensitized Solar Cell-Based Synaptic Device</h5>
+                                <p class="card-text"> Physical reservoir computing (PRC) utilizing synaptic devices shows significant promise for edge AI. Researchers from the Tokyo University of Science have introduced a novel self-powered dye-sensitized solar cell-based device that mimics human ...</p>
+                                <a href="https://www.sciencedaily.com/releases/2024/11/241125125125.htm" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="imgd/ai.jpg" class="card-img-top" alt="News 2">
+                            <div class="card-body">
+                                <h5 class="card-title">The Next Evolution of AI Begins With Ours</h5>
+                                <p class="card-text">he genome has space for only a small fraction of the information needed to control complex behaviors. So then how, for example, does a newborn sea turtle instinctually know to follow the moonlight? Neuroscientists have devised a potential ....</p>
+                                <a href="https://www.sciencedaily.com/releases/2024/11/241125125041.htm" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="imgd/syrobo.jpg" class="card-img-top" alt="News 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Synchronized Movement Between Robots and Humans Builds Trust, Study Finds</h5>
+                                <p class="card-text">Trust between humans and robots is improved when the movement between both is harmonized, researchers have ...</p>
+                                <a href="https://www.sciencedaily.com/releases/2024/11/241120122448.htm" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="mt-4">
+                <p>&copy; 2024 SG NEWS and Muhammad Sagor. All rights reserved. Developed &hearts; by Muhammad Sagor</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // JavaScript to toggle sidebar on small screens
+        const sidebar = document.getElementById('sidebar');
+        const toggleSidebar = document.getElementById('toggleSidebar');
+
+        toggleSidebar.addEventListener('click', () => {
+            sidebar.classList.toggle('d-none');
+        });
+    </script>
+</body>
+</html>
